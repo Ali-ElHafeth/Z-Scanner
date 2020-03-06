@@ -178,6 +178,7 @@ do
 	con=$[$con+1]
 done
 }
+####################(XSS)######################
 lupxss(){
 for zxss in $(cat $HOME/Z-Scanner/Files/xss-payloads)
 do
