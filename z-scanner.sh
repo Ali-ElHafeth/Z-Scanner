@@ -33,7 +33,7 @@ echo ""
 echo "   ${f2}[${f1}1${f2}] ${f7}Local File Include"
 echo "   ${f2}[${f1}2${f2}] ${f7}Remote File Include"
 echo "   ${f2}[${f1}3${f2}] ${f7}Remote Code execution"
-echo "   ${f2}[${f1}3${f2}] ${f7}Cross Site Scripting"
+echo "   ${f2}[${f1}4${f2}] ${f7}Cross Site Scripting"
 echo ""
 echo -e ${f6}"┌─[${f1}zscanner${f6}]"
 read -p "└─────► " zscann;
