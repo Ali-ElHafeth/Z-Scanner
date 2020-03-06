@@ -18,7 +18,9 @@ time=`date +"%T"`
 
 useragents="Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:61.0) Gecko/20100101 Firefox/61.0"
 echo "${f3}"
+sleep 1.0;
 figlet -f big Z-Scanner
+sleep 1
 echo ""
 echo "${f3}Author     : ${f7}Ali ElHafeth"
 echo "${f3}Team       : ${f7}Zer0day Sudan"
@@ -186,7 +188,7 @@ do
 	if [[ $fast == 0 && $con > 0 ]]; then
 		sleep 3
 	fi
-	xss & 
+	$zxss & 
 	con=$[$con+1]
 done
 }
