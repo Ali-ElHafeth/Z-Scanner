@@ -104,7 +104,7 @@ lfi(){
 		echo "$urlz$miring$zxss" >> $save1
 	elif [[ $scan4 =~ "/bin/bash" ]]; then
 			echo "${f2}[${f3}$time${f2}] $urlz$miring$zxss ~> ${f6}[${f3}OK${f6}]${f2}"
-			echo "$urlz$miring$zxss" >> $save1
+			echo "$urlz$miring$zxss" >> $save4
 		else
 			echo "${f2}[${f3}$time${f2}] $urlz$miring$zxss ~> ${f6}[${f1}FAIL${f6}]${f2}"
 	fi
@@ -188,7 +188,7 @@ do
 	if [[ $fast == 0 && $con > 0 ]]; then
 		sleep 3
 	fi
-	$zxss & 
+	$listxss & 
 	con=$[$con+1]
 done
 }
