@@ -37,7 +37,7 @@ echo "   ${f2}[${f1}2${f2}] ${f7}Remote File Include"
 echo "   ${f2}[${f1}3${f2}] ${f7}Remote Code execution"
 echo "   ${f2}[${f1}4${f2}] ${f7}Cross Site Scripting"
 echo ""
-echo -e ${f6}"┌─[${f1}zscanner${f6}]"
+echo -e ${f6}"┌─[${f1}input@zscanner${f6}]"
 read -p "└─────► " zscann;
 echo "${f1}Ex: ${f7}http://targeturl.com"
 read -p "${f2}[${f1}*${f2}]${f1} Enter URL${f2}|-> "  urlz;
@@ -97,7 +97,7 @@ rce(){
 	
 }
 # func xss
-lfi(){
+xss(){
 	scan4=$(curl -s -A '${useragents}' -o /dev/null -w '%{http_code}' ${urlz}${miring}${zxss})
 	if [[ $scan4 == 200 ]] || [[ $scan4 == 301 ]] || [[ $scan4 =~ "/etc/passwd" ]]; then
 		echo "${f2}[${f3}$time${f2}] $urlz$miring$zxss ~> ${f6}[${f7}OK${f6}]${f2}"
@@ -176,7 +176,7 @@ do
 	if [[ $fast == 0 && $con > 0 ]]; then
 		sleep 3
 	fi
-	rce & 
+	 rce &
 	con=$[$con+1]
 done
 }
@@ -188,7 +188,7 @@ do
 	if [[ $fast == 0 && $con > 0 ]]; then
 		sleep 3
 	fi
-	$listxss & 
+	xss & 
 	con=$[$con+1]
 done
 }
