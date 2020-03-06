@@ -3,7 +3,7 @@ mkdir Files
 cp lfi-payloads /$HOME/Z-Scanner/Files
 cp rfi-payloads /$HOME/Z-Scanner/Files
 cp rce-payloads /$HOME/Z-Scanner/Files
-cp xss-payloads/$HOME/Z-Scanner/Files
+cp xss-payloads /$HOME/Z-Scanner/Files
 clear
 
 # color
